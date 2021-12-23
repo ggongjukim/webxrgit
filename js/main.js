@@ -317,7 +317,7 @@ function RealVRJs(str){//디지털병풍버튼
         {
             //유형
             case "6.25":
-                var url = "http://realistic.hscdn.com/front/vrmode/6-25_vr.mp4";//"625360.mp4";
+                var url = "http://realistic.hscdn.com/contents/m/0bdd2d6f-d2f9-4336-b7c5-dbbd443d53fa.mp4";//"http://realistic.hscdn.com/front/vrmode/6-25_vr.mp4";//"625360.mp4";
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL', url);
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene', '360Video');
                 break;
