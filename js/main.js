@@ -168,7 +168,7 @@ function Asset3DButtonJs(str){ //3D Asset버튼
                 break;
             //유형
             case "6.25":
-                var url = "jang/scene.gltf";
+                var url = "http://realistic.hscdn.com/front/vrmode/6-25.mp4";//"jang/scene.gltf";
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL', url);
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene', 'Model3DViewer');
                 break;    
@@ -275,7 +275,7 @@ function VideoJs(str){//동영상버튼
         {
             //유형
             case "6.25":
-                var url = "625video.mp4";
+                var url = "http://realistic.hscdn.com/front/vrmode/6-25_vr.mp4";//"625video.mp4";
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL',url);
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene','Video');
                 break;
