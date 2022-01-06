@@ -172,6 +172,7 @@
     margin-top: 3%;
     height: 34vh;
     overflow-y: auto;
+    /* change11:54 */
 }
 
 
@@ -183,7 +184,7 @@
 
 
 }
-
+/* 
 @media( orientation: portrait ){
     html {
       transform: rotate(-90deg);
@@ -194,4 +195,4 @@
       width: 100vh;
       height: 100vw;
     }
-  }
+  } */
