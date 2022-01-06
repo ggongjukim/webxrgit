@@ -99,15 +99,18 @@ $(document).ready(function(){
     
 });//요기까지 제이쿼리
 
-//landscpae모드 유지
-if (window.matchMedia('(orientation: portrait)').matches) {
-	// Portrait 모드일 때 실행할 스크립트
-	// 폭과 높이가 같으면 Portrait 모드로 인식돼요
-    window.matchMedia('(orientation: portrait)').matches = false;
-    window.matchMedia('(orientation: portrait)').matches = true;
-    console.log("세로모드");
+//Landscape 유지
+function setLandscape() {
+    if (window.matchMedia('(orientation: portrait)').matches) {
+        // Portrait 모드일 때 실행할 스크립트
+        // 폭과 높이가 같으면 Portrait 모드로 인식돼요
+        window.matchMedia('(orientation: portrait)').matches = false;
+        window.matchMedia('(orientation: portrait)').matches = true;
+        console.log("세로모드");
 
+    }
 } 
+setLandscape();
     
 function cssbutton(num) {
      gameInstance.SendMessage('MouseWheelMove', 'CSSButton', num);
