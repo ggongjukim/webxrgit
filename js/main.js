@@ -101,6 +101,8 @@ $(document).ready(function(){
 
 //Landscape 유지
 function setLandscape() {
+    console.log("Landscape 유지");
+
     if (window.matchMedia('(orientation: portrait)').matches) {
         // Portrait 모드일 때 실행할 스크립트
         // 폭과 높이가 같으면 Portrait 모드로 인식돼요
