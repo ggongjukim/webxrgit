@@ -105,6 +105,7 @@ if (window.matchMedia('(orientation: portrait)').matches) {
 	// 폭과 높이가 같으면 Portrait 모드로 인식돼요
     window.matchMedia('(orientation: portrait)').matches = false;
     window.matchMedia('(orientation: portrait)').matches = true;
+    console.log("세로모드");
 
 } 
     
