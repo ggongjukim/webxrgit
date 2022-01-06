@@ -113,6 +113,7 @@ $(document).ready(function(){
 //     }
 // } 
 // setLandscape();
+// 왜 안변하지
     
 function cssbutton(num) {
      gameInstance.SendMessage('MouseWheelMove', 'CSSButton', num);
