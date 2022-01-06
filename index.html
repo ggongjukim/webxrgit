@@ -2,8 +2,13 @@
 <html lang="ko">
 
 <head>
+
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 가로모드 유지 -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
     <!-- These tags are needed for enabling experimental Chrome APIs via Chrome's Origin-Trial program (Android, Windows): https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/available-trials.md#current-experimental-features -->
     <!-- Origin Trial Token, feature = Generic Sensors, origin = https://github.io, expires = 2018-04-10 -->
     <meta http-equiv="origin-trial" data-feature="Generic Sensors" data-expires="2018-04-10"
@@ -85,6 +90,20 @@
     </script>
     -->
 </head>
+
+<style>
+    @media( orientation: portrait ){
+      html {
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vh;
+        height: 100vw;
+      }
+    }
+  </style>
 
 <body>
     <div id="loader">
