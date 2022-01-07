@@ -16,7 +16,7 @@
     <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://github.io, expires = 2018-05-07 -->
     <meta http-equiv="origin-trial" data-feature="WebXR (For Chrome M62+)" data-expires="2018-05-07"
         content="AgINztgDnjFV8da2D9SSzIITBRlHX8mduCR7DXfENxjr9ALduKOxBDdn2n66auQSlljVyhnRWWerxC0BWbE8pAoAAABOeyJvcmlnaW4iOiJodHRwczovL2dpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MjU3MjU4MDh9">
-    <title> | Unity-WebXR-Export</title>
+    <title> | 0107</title>
     <meta name="description" content="">
     <!-- 웹폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -105,15 +105,22 @@
     }
   </style> -->
 
+<!-- id = container 추가 -->
 <body>
+    
     <div id="loader">
         <div id="loading" class="loading">Loading</div>
         <div id="progress" class="progress"></div>
+        
     </div>
+    <!-- <input value="전체모드로 보기" onclick = "startFS()"></input> -->
+    <button onclick = "startFS()">전체모드로 보기</button>
 
     <div id="game">
         <div id="gameContainer"></div>
     </div>
+    
+
 
     <!-- <div id="instruction">
         <div id="novr" class="panel center">
@@ -122,7 +129,7 @@
             <p><img src="mousedrag.png" width="70" alt="Click-and-drag your mouse"></p>
             <p>In the meantime, <strong><em>click and drag</em></strong> to have a look around!</p>
             <p>
-                <button class="confirm">Continue</button>
+                <button class="confirm" >Continue</button>
             </p>
         </div>
 
