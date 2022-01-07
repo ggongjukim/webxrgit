@@ -74,12 +74,5 @@ function startFS() {
 
 }
 
-// if(isMobile)
-// {
-
-//         console.log("세로 모드 인가요? :" + window.matchMedia('(orientation: portrait)').matches);
-//         console.log("현재 상태 : " +window.screen.orientation.type);
-//         window.screen.orientation.lock('landscape');
-// }
 
 

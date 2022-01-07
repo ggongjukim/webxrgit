@@ -1,25 +1,27 @@
 @media (max-width: 800px) {
-/* max-width: 480px */
-/* @media( orientation: portrait ){
-    html {
-        transform: rotate(-90deg);
-        transform-origin: top left;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100vh;
-        height: 100vw;
-    } */
-
+.pc{display: none;}
+.mo{display: block;}
+/* 
+* {
+    list-style: none;
+}
 .pc{display: none;}
 .mo{display: block;}
 
+button {
+    background: none;
+    border: none;
+}
+.fullscreen {
+    right: 50%;
+} */
 
 /* 메뉴 바 */
 .menu{
     width: 70vw; height: 100%;
     left: -60vw;
     top: 0; z-index: 5;
+    
 
 }
 .menu.on{
@@ -28,6 +30,7 @@
 .menu .left{
     float: left; 
     width: 85%; height: 100%;
+    /* width : 85% */
     background: #111;
     padding: 8% 0;
     box-sizing: border-box;
