@@ -156,6 +156,9 @@ function selectPagNav(num)
 const boxbg = document.getElementsByClassName("conbutton-bg");
 var box = document.getElementsByClassName("url2");
 //con 버튼
+//console.log("Asset3DButtonJs isImmersive 아님");
+//console.log("Asset3DButtonJs In VR :" + str);
+//tak/scene.gltf
 function Asset3DButtonJs(str){ //3D Asset버튼
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
@@ -168,22 +171,20 @@ function Asset3DButtonJs(str){ //3D Asset버튼
                 break;    
         }
     }   
-    else
+    else//VR 일때 
     {
-        //console.log("Asset3DButtonJs isImmersive 아님");
-        //console.log("Asset3DButtonJs In VR :" + str);
         switch(str)
         {
             //무형
             case "택견":
-                var url = "tak/scene.gltf";
+                var url = "cdn 3d model 주소 넣기";
                 gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL',url);
                 gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene','Model3DViewer');
                 console.log(url);
                 break;
             //유형
             case "6.25":
-                var url = "jang/scene.gltf";
+                var url = "cdn 3d model 주소 넣기";
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL', url);
                 gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene', 'Model3DViewer');
                 break;    
@@ -268,9 +269,9 @@ function MediaArtJs(str){//미디어아트 버튼
     console.log("MediaArtJs : " + str);
 
 }
+//console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
 
 function VideoJs(str){//동영상버튼
-    //console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
         boxbg[0].style.display="flex";
