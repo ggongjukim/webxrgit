@@ -37,6 +37,9 @@
 
      <!-- Swiper JS -->
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- ggongjukim -->
+     <script src="js/VRdata.js" defer></script>
 
     <script src="js/main.js"></script>
 
@@ -53,7 +56,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
         UnityLoader.SystemInfo.mobile = false;  // Workaround to force `UnityLoader` to actually load on mobile.
-        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/Natural0128.json', {
+        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/Natural_vr_test2.json', {
             Module: {
                 // `preserveDrawingBuffer` is needed for WebVR content to be mirrored to the `<canvas>`.
                 webglContextAttributes: {
@@ -500,6 +503,22 @@
             <i class="fas fa-times"></i>
         </div>
 
+<!--con button test-->
+<div class= "conbutton-bg">
+    <div class = "conbutton">
+        <h2>conbutton test</h2>
+        <button onclick = "closeConButton()"><h1>close</h1></button>
+        <div></div>
+        <div class="sketchfab-embed-wrapper"> 
+            <iframe class= "url2" title="택견_숨쉬기" 
+            width="1000" height="600"
+            frameborder="0" 
+            mozallowfullscreen="true" 
+            webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=""> </iframe> 
+        </div>
+    </div>
+</div>
 
 
 

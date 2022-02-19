@@ -1,27 +1,14 @@
-@media (max-width: 800px) {
-.pc{display: none;}
-.mo{display: block;}
-/* 
-* {
-    list-style: none;
-}
+@media (max-width: 480px) {
+
 .pc{display: none;}
 .mo{display: block;}
 
-button {
-    background: none;
-    border: none;
-}
-.fullscreen {
-    right: 50%;
-} */
 
 /* 메뉴 바 */
 .menu{
     width: 70vw; height: 100%;
     left: -60vw;
     top: 0; z-index: 5;
-    
 
 }
 .menu.on{
@@ -30,7 +17,6 @@ button {
 .menu .left{
     float: left; 
     width: 85%; height: 100%;
-    /* width : 85% */
     background: #111;
     padding: 8% 0;
     box-sizing: border-box;
@@ -109,6 +95,8 @@ button {
     position: fixed;
     bottom: 8%; left: 50%; transform: translateX(-50%);
     overflow: unset;
+    /* ggongjukim
+    display: none; */
 }
 
 .page-nav ul{
@@ -186,22 +174,14 @@ button {
     margin-top: 3%;
     height: 34vh;
     overflow-y: auto;
-    /* change11:56 */
 }
 
 
 
 
-}
 
-/* @media( orientation: portrait ){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: top left;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100vh;
-      height: 100vw;
-    }
-  } */
+
+
+
+
+}

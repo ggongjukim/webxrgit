@@ -211,6 +211,8 @@ body{
     position: fixed;
     bottom: 8%; left: 50%; 
     transform: translateX(-50%);
+    /* ggongjukim
+    display: none; */
 }
 .page-nav.pc ul{
     display: flex;
@@ -368,36 +370,36 @@ body{
     padding: 3%; box-sizing: border-box;
     overflow-y: auto;
 }
-video {
-    /* display: block;
+/* video {
+    display: block;
     max-width: 80%;
-    margin: 20px auto; */
-}
+    margin: 20px auto;
+} */
 
 
-/* @media (min-width: 481px) and (max-width: 670px) {
+@media (min-width: 481px) and (max-width: 670px) {
     
 .menu .gnb li a{font-size: 13px;}
 .menu .lnb .r-box li{width: 48%;}
 .menu .lnb .r-box li label{font-size: 13px;}
 
-} */
-/* 
-@media (max-width: 480px) {
-    html {
-        transform: rotate(-90deg);
-        transform-origin: top left;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100vh;
-        height: 100vw;
-    }
-    .menu .gnb li a{font-size: 13px;}
-    .menu .lnb .r-box li{width: 48%;}
-    .menu .lnb .r-box li label{font-size: 13px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
- */
+
+
 
 
 

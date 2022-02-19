@@ -53,7 +53,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
         UnityLoader.SystemInfo.mobile = false;  // Workaround to force `UnityLoader` to actually load on mobile.
-        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/Tangible0128.json', {
+        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/tangible_mobile_0211.json', {
             Module: {
                 // `preserveDrawingBuffer` is needed for WebVR content to be mirrored to the `<canvas>`.
                 webglContextAttributes: {
@@ -74,7 +74,11 @@
             if (progress === 1) {
                 document.dispatchEvent(new CustomEvent('UnityLoaded'));
             }
+
+            // gameInstance.SendMessage('TangibleCamPosition', 'RemoveObject', 'TangibleCamPosition,Cam4,Canvas,3Dasset_Button');
         }
+        //window.gameInstance.SendMessage('TangibleCamPosition', 'RemoveGameObject', 'TangibleCamPosition,Cam0,Canvas,3Dasset_Button');
+
     </script>
 </head>
 
@@ -87,7 +91,13 @@
     <div id="game">
         <div id="gameContainer"></div>
     </div>
+    <script>
+        // window.gameInstance.SendMessage('TangibleCamPosition', 'RemoveGameObject', 'TangibleCamPosition,Cam0,Canvas,3Dasset_Button');
+        // window.onload=function(){ 
+        //     window.gameInstance.SendMessage('TangibleCamPosition', 'RemoveGameObject', 'TangibleCamPosition,Cam0,Canvas,3Dasset_Button');
+        // }
 
+    </script>
     <!-- <div id="instruction">
         <div id="novr" class="panel center">
             <h3>You&rsquo;ll need a <a href="https://developer.mozilla.com/topics/mixed-reality/">WebXR-enabled
@@ -116,7 +126,7 @@
 
     <script src="vendor/gl-matrix-min.js"></script>
     
-    <script src="js/test_tangible.js"></script>
+    <!-- <script src="js/test_tangible.js"></script> -->
 
 
     <!-- 승연 - 작업 -->
@@ -172,6 +182,7 @@
         </div>
 
         <script src="webxr.js"></script>
+        <script src="js/test_tangible.js"></script>
         
         <div class="pop-wrap">
             <div class="pop list-box1">

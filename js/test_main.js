@@ -1,3 +1,34 @@
+document.querySelectorAll(".pc").forEach(a=>a.style.display = "none");
+document.querySelectorAll(".mo").forEach(a=>a.style.display = "none");
+
+function ShowPagenavJs(){
+        console.log('ShowPagenavJs');
+        document.querySelectorAll(".pc").forEach(a=>a.style.display = "block");
+        document.querySelectorAll(".mo").forEach(a=>a.style.display = "block");
+
+        //모바일이면 pc navigation 끄기
+        var ratio = window.devicePixelRatio; 
+        if(ratio > 1){ 
+                document.querySelectorAll(".pc").forEach(a=>a.style.display = "none");
+        }
+
+}
+
+// var lengthOfArray=arrayOfElements.length;
+
+// for (var i=0; i<lengthOfArray;i++){
+//     arrayOfElements[i].style.display='none';
+// }
+// off();
+// function off(){
+//         document.querySelectorAll(".page-nav .pc ul").forEach(a=>a.style.opacity = "0.0");
+// }
+
+// function ShowPagenavJs(){
+//         console.log('ShowPagenavJs');
+//         document.querySelectorAll(".page-nav").forEach(a=>a.style.display = "block");
+// }
+
 function getURL(text)
 {
      switch(text)
@@ -23,56 +54,10 @@ function getURL(text)
         }
         
 }
-
-
-//Mobile여부를 구분하기 위함 
-var uAgent = navigator.userAgent.toLowerCase(); // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트 
-var isMobile  = false;
-var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile'); 
-for (var i = 0; i < mobilePhones.length; i++){ 
-        if (uAgent.indexOf(mobilePhones[i]) != -1){ 
-                console.log("모바일입니다");
-                isMobile = true; 
-        } 
-};
-
-function startFS() {
-        console.log("fullscreen 함수 실행")
-        var element = document.documentElement;//document.getElementsByTagName('html');
-
-        if (element.requestFullScreen) {
-
-                element.requestFullScreen();
-                console.log("requestFullScreen");
-
-        } else if (element.webkitRequestFullScreen) {
-
-                element.webkitRequestFullScreen();
-
-                console.log("webkitRequestFullScreen");
-        } else if (element.mozRequestFullScreen) {
-
-                element.mozRequestFullScreen();
-
-                console.log("mozRequestFullScreen");
-        } else if (element.msRequestFullscreen) {
-
-                element.msRequestFullscreen(); // IE
-
-                console.log("msRequestFullscreen");
-        }
-        else {
-                console.log("nothing");
-        }
-
-        if (isMobile) {
-
-                console.log("세로 모드 인가요? :" + window.matchMedia('(orientation: portrait)').matches);
-                console.log("현재 상태 : " + window.screen.orientation.type); 
-                window.screen.orientation.lock('landscape');
-        }
-
-}
-
+// var Pagenav = document.querySelectorAll('.page-nav');
+// Pagenav.forEach(a=>a.style.display = "none");
+// function ShowPagenavJs(){
+//         Pagenav.forEach(a=>a.style.display = "block");
+// }
 
 

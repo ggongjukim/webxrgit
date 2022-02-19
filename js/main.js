@@ -98,31 +98,26 @@ $(document).ready(function(){
 
     
 });//요기까지 제이쿼리
+// window.gameInstance.SendMessage('TangibleCamPosition', 'RemoveObject', 'TangibleCamPosition,Cam4,Canvas,RealVR_BUtton');
 
-// //Landscape 유지
-// function setLandscape() {
-//     console.log("Landscape 유지");
-
-//     if (window.matchMedia('(orientation: portrait)').matches) {
-//         // Portrait 모드일 때 실행할 스크립트
-//         // 폭과 높이가 같으면 Portrait 모드로 인식돼요
-//         window.matchMedia('(orientation: portrait)').matches = false;
-//         window.matchMedia('(orientation: portrait)').matches = true;
-//         console.log("세로모드");
-
-//     }
-// } 
-// setLandscape();
-// 왜 안변하지
-    
 function cssbutton(num) {
      gameInstance.SendMessage('MouseWheelMove', 'CSSButton', num);
+    //  gameInstance.SendMessage('TangibleCamPosition', 'RemoveGameObject', 'TangibleCamPosition,Cam4,Canvas,3Dasset_Button');
      console.log("버튼클릭");
 }
 
 var PageNav = document.getElementsByClassName("pagenav");
 var PageNavDiv = document.getElementsByClassName("pagenavdiv");
 var PageNavP = document.getElementsByClassName("pagenavp");
+
+//testtestestststset
+
+for(let i=0;i < PageNav.length;i++){
+    PageNav[i].classList.remove('on');
+    PageNavDiv[i].classList.remove('on');
+    PageNavP[i].classList.remove('on');
+    console.log("제거하기");
+}
 
 function CamPositionToPageNav(x){
         console.log("CamPositionToPageNav : " + x);
@@ -153,12 +148,11 @@ function selectPagNav(num)
 }
 
 
+//기존코드
+
 const boxbg = document.getElementsByClassName("conbutton-bg");
 var box = document.getElementsByClassName("url2");
 //con 버튼
-//console.log("Asset3DButtonJs isImmersive 아님");
-//console.log("Asset3DButtonJs In VR :" + str);
-//tak/scene.gltf
 function Asset3DButtonJs(str){ //3D Asset버튼
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
@@ -171,33 +165,44 @@ function Asset3DButtonJs(str){ //3D Asset버튼
                 break;    
         }
     }   
-    else//VR 일때 
+    else
     {
-        switch(str)
-        {
-            //무형
-            case "택견":
-                var url = "cdn 3d model 주소 넣기";
-                gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL',url);
-                gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene','Model3DViewer');
-                console.log(url);
-                break;
-            //유형
-            case "6.25":
-                var url = "cdn 3d model 주소 넣기";
-                gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL', url);
-                gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene', 'Model3DViewer');
-                break;    
-            default:
-                console.log("default");
-                break;    
+        var link = document.location.href; 
+
+        if(link.includes('intangible')){
+            var name = Object.keys(VRdata.Intangible[str].Model3D);
+            var url = Object.values(VRdata.Intangible[str].Model3D);
+            name = name.join('*')
+            url = url.join('*')
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonName', name);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL', url);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene', 'Model3DViewer');
         }
+        // switch(str)
+        // {
+        //     //무형
+        //     case "택견":
+        //         var url = "tak/scene.gltf";
+        //         gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL',url);
+        //         gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene','Model3DViewer');
+        //         console.log(url);
+        //         break;
+        //     //유형
+        //     case "6.25":
+        //         var url = "jang/scene.gltf";
+        //         gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonURL', url);
+        //         gameInstance.SendMessage('TangibleCamPosition', 'ConbuttonLoadScene', 'Model3DViewer');
+        //         break;    
+        //     default:
+        //         console.log("default");
+        //         break;    
+        // }
         
     }
 }
 
 function VR360ButtonJs(str){ //360VR 버튼
-    //console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
+    console.log("VR360ButtonJs : " + str);
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
         boxbg[0].style.display="flex";
@@ -211,67 +216,100 @@ function VR360ButtonJs(str){ //360VR 버튼
     }   
     else
     {
-        //console.log("VR360ButtonJs isImmersive 아님");
-        //console.log("VR360ButtonJs In VR :" + str);
-        switch(str)
-        {
-            case "택견":
-                var url = "택견.mp4";
-                gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL',url);
-                gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene','360Video');
-                break;
-            default:
-                console.log("default");
-                break;    
+        var link = document.location.href; 
+ 
+        if(link.includes('intangible')){
+            var name = Object.keys(VRdata.Intangible[str].VRvideo);
+            var url = Object.values(VRdata.Intangible[str].VRvideo);
+            name = name.join('*')
+            url = url.join('*')
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonName', name);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL', url);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene', '360Video');
         }
+        // 예전코드
+        // switch(str)
+        // {
+        //     case "택견":
+        //         var url = "택견.mp4";
+        //         gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL',url);
+        //         gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene','360Video');
+        //         break;
+        //     default:
+        //         console.log("default");
+        //         break;    
+        // }
         
     }
 
 }
-
+window.addEventListener("keydown", (e) => {
+    Asset3DButtonJs("만구대탁굿")
+});
 function ThreeFaceVideoJs(str){ //3면 버튼
-    //console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
         boxbg[0].style.display="flex";
-        //console.log("ThreeFaceVideoJs : " + str);
-        switch(str)
-        {
-            default:
-                box[0].src = "";
-                break;    
-        }
+        //data 넘길 준비
+
+
+    //     switch(str)
+    //     {
+            
+    //         case "설악산 꽃자리":
+    //             console.log("json 테스트 : " + VRdata.Natural[str].video[0])
+    //             var name = Object.keys(VRdata.Natural[str].video);
+    //             var url = Object.values(VRdata.Natural[str].video);
+    //             name = name.join('*')
+    //             url = url.join('*')
+    //             console.log(name);
+    //             console.dir(url);
+    //             break;
+
+    //         case "디지털 병풍":
+    //             console.log("json 테스트" + VRdata.Natural[str].video[0].videoname)
+    //             break;
+    //         default:
+    //             box[0].src = "";
+    //             break;    
+    //     }
     }   
     else
     {
-        //console.log("ThreeFaceVideoJs isImmersive 아님");
-        //console.log("ThreeFaceVideoJs In VR :" + str);
-        switch(str)
-        {
-
-            //자연
-            case "설악산 꽃자리":
-                var url = "설악산.mp4";
-                gameInstance.SendMessage('NaturalCamposition', 'ConbuttonURL', url);
-                gameInstance.SendMessage('NaturalCamposition', 'ConbuttonLoadScene', 'Video');
-                break;
-            default:
-                console.log("default");
-                break;   
-
-
+        var link = document.location.href; 
+ 
+        if(link.includes('natrual')){
+            var name = Object.keys(VRdata.Natural[str].video);
+            var url = Object.values(VRdata.Natural[str].video);
+            name = name.join('*')
+            url = url.join('*')
+            gameInstance.SendMessage('NaturalCamposition', 'ConbuttonName', name);
+            gameInstance.SendMessage('NaturalCamposition', 'ConbuttonURL', url);
+            gameInstance.SendMessage('NaturalCamposition', 'ConbuttonLoadScene', 'Video');
         }
+        else if (link.includes('intangible')){
+            var name = Object.keys(VRdata.Intangible[str].video);
+            var url = Object.values(VRdata.Intangible[str].video);
+            name = name.join('*')
+            url = url.join('*')
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonName', name);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonURL', url);
+            gameInstance.SendMessage('IntangibleCamPosition', 'ConbuttonLoadScene', 'Video');
+        }
+
+
     }
 
 }
+
 
 function MediaArtJs(str){//미디어아트 버튼
     console.log("MediaArtJs : " + str);
 
 }
-//console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
 
 function VideoJs(str){//동영상버튼
+    //console.log("thisXRMananger.isInVRSession : " + window.xrManager.isInVRSession);
     if(!window.xrManager.isInVRSession)//VR이 아니면
     {
         boxbg[0].style.display="flex";
@@ -285,8 +323,6 @@ function VideoJs(str){//동영상버튼
     }   
     else
     {
-        //console.log("VideoJs isImmersive 아님");
-        //console.log("VideoJs In VR :" + str);
         switch(str)
         {
             //유형

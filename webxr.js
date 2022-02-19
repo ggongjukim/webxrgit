@@ -222,6 +222,7 @@
         supportsImmersiveVR: this.isVRSupported,
       })
     );
+    
 
     if (!window.isSecureContext) {
       this.inlineSession = false;
@@ -233,9 +234,14 @@
         navigator.xr.requestSession('inline').then((session) => {
           this.inlineSession = session;
           this.onSessionStarted(session);
+
         });
       }
     });
+    //ggongjukim
+    window.gameInstance.SendMessage('TangibleCamPosition', 'ActiveGameObject', 'TangibleCamPosition,Cam4,Canvas,RealVR_Button');
+    // window.gameInstance.SendMessage('TangibleCamPosition', 'RemoveGameObject', 'TangibleCamPosition,Cam4,Canvas,RealVR_Button');
+
   }
 
   XRManager.prototype.getGamepadAxes = function(gamepad) {
@@ -526,6 +532,8 @@
         console.warn('Could not load the WebXR Polyfill script:', err);
       });
     }
+    //ggonjgukim
+    //gameInstance.SendMessage('TangibleCamPosition', 'RemoveObject', 'TangibleCamPosition,Cam4,Canvas,3Dasset_Button');
 
   }
 
