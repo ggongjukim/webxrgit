@@ -244,7 +244,13 @@ function VR360ButtonJs(str){ //360VR 버튼
 
 }
 window.addEventListener("keydown", (e) => {
-    Asset3DButtonJs("만구대탁굿")
+    console.log(e.key);
+    switch(e.key){
+        case "1":
+            Asset3DButtonJs("택견");
+        default:
+            break;
+    }
 });
 function ThreeFaceVideoJs(str){ //3면 버튼
     if(!window.xrManager.isInVRSession)//VR이 아니면
