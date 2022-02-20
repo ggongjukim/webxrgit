@@ -124,7 +124,7 @@ const VRdata =
     {
         "6.25": {
             "Model3D": {
-                "대한민국 최초 운용 전투기(F51D Mustang)": "https://realistic.hscdn.com/contents/3d_asset/tangible/mustang/mustang.glb"
+                "대한민국 최초 운용 전투기(F51D Mustang)": "https://realistic.hscdn.com/contents/3d_asset/tangible/mustang/scene.gltf#0.002"
             },
             "VRvideo": {
                 "625전쟁과탄흔지도": "https://realistic.hscdn.com/contents/f14f17a9-c7a0-40f7-9e48-b2d536b78795.mp4"
@@ -145,34 +145,34 @@ const VRdata =
             },
             "Model3D":
             {
-                "대전 소대헌·호연재 고택_경대": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_1.glb",
-                "대전 소대헌·호연재 고택_머릿장": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_2.glb",
-                "대전 소대헌·호연재 고택_머릿장2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_3.glb",
-                "대전 소대헌·호연재 고택_문방함": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_4.glb",
-                "대전 소대헌·호연재 고택_문방함2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_5.glb",
-                "대전 소대헌·호연재 고택_붓과 붓통": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_6.glb",
-                "대전 소대헌·호연재 고택_사서삼경": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_7.glb",
-                "대전 소대헌·호연재 고택_상영도": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_8.glb",
-                "대전 소대헌·호연재 고택_서가": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_9.glb",
-                "대전 소대헌·호연재 고택_서가2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_10.glb",
-                "대전 소대헌·호연재 고택_서가3": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_11.glb",
-                "대전 소대헌·호연재 고택_서산": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_12.glb",
-                "대전 소대헌·호연재 고택_서안": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_13.glb",
-                "대전 소대헌·호연재 고택_서안2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_14.glb",
-                "대전 소대헌·호연재 고택_선세언독": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_15.glb",
-                "대전 소대헌·호연재 고택_소대헌유독": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_16.glb",
-                "대전 소대헌·호연재 고택_송준길 벼루와 벼루함": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_17.glb",
-                "대전 소대헌·호연재 고택_시헌력": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_18.glb",
-                "대전 소대헌·호연재 고택_쌍륙": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_19.glb",
-                "대전 소대헌·호연재 고택_의자": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_20.glb",
-                "대전 소대헌·호연재 고택_장서인": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_21.glb",
-                "대전 소대헌·호연재 고택_좌등": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_22.glb",
-                "대전 소대헌·호연재 고택_주식시의": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_23.glb",
-                "대전 소대헌·호연재 고택_증조고시고": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_24.glb",
-                "대전 소대헌·호연재 고택_향침": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_25.glb",
-                "대전 소대헌·호연재 고택_호구단자": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_26.glb",
-                "대전 소대헌·호연재 고택_호연재유고": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_27.glb",
-                "대전 소대헌·호연재 고택_호적궤": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_28.glb",
+                "대전 소대헌·호연재 고택_경대": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_1.glb#0.5#pCube1_SRC_001_2_0",
+                "대전 소대헌·호연재 고택_머릿장": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_2.glb#0.025#SRC_001_PLY_SRC_001_0",
+                "대전 소대헌·호연재 고택_머릿장2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_3.glb#0.02#Body_m_SDH005_FinalTexture_0",
+                "대전 소대헌·호연재 고택_문방함": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_4.glb#0.05#OSJ_003_1_Body_osj_003_4_0",
+                "대전 소대헌·호연재 고택_문방함2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_5.glb#0.05#OSJ_003_1_Body_osj_003_4_0",
+                "대전 소대헌·호연재 고택_붓과 붓통": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_6.glb#1.0#Cylinder_lambert3_0",
+                "대전 소대헌·호연재 고택_사서삼경": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_7.glb#0.05#SDH_004_1_PLY_SDH_007_1_0",
+                "대전 소대헌·호연재 고택_상영도": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_8.glb#0.025#paper_lambert5_0" ,
+                "대전 소대헌·호연재 고택_서가": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_9.glb#0.015#SDH_004_PLY_SDH_004_MTL_0" ,
+                "대전 소대헌·호연재 고택_서가2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_10.glb#0.015#SDH_004_PLY_SDH_004_MTL_0",
+                "대전 소대헌·호연재 고택_서가3": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_11.glb#0.01#SDH_004_PLY_SDH_004_MTL_0" ,
+                "대전 소대헌·호연재 고택_서산": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_12.glb#0.05#OSJ_003_2_PLY_OSJ_003_2_0" ,
+                "대전 소대헌·호연재 고택_서안": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_13.glb#0.015#SDH_007_PLY_SDH_007_0" ,
+                "대전 소대헌·호연재 고택_서안2": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_14.glb#0.015#SDH_007_PLY_SDH_007_0" ,
+                "대전 소대헌·호연재 고택_선세언독": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_15.glb#0.05#book_cover_01_OSJ_004_1_M_0",
+                "대전 소대헌·호연재 고택_소대헌유독": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_16.glb#0.05#book_cover_01_SDH_007_2_0" ,
+                "대전 소대헌·호연재 고택_송준길 벼루와 벼루함": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_17.glb#0.025#top_02_lambert3_0" ,
+                "대전 소대헌·호연재 고택_시헌력": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_18.glb#0.025#SDH_005_1_PLY_SDH_007_1_M_0" ,
+                "대전 소대헌·호연재 고택_쌍륙": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_19.glb#0.025#Wood3_OSJ_004_3_0" ,
+                "대전 소대헌·호연재 고택_의자": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_20.glb#0.025#SDH_003_PLY_SDH_003_0" ,
+                "대전 소대헌·호연재 고택_장서인": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_21.glb#0.1#OSJ_003_3_lambert2_0" ,
+                "대전 소대헌·호연재 고택_좌등": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_22.glb#0.025#OSJ_002_PLY_lambert2_0",
+                "대전 소대헌·호연재 고택_주식시의": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_23.glb#0.05#book_cover_01_SRC_004_M_0" ,
+                "대전 소대헌·호연재 고택_증조고시고":"https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_24.glb#0.025#book_cover_01_SRC_003_2_1_M1_0" ,
+                "대전 소대헌·호연재 고택_향침": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_25.glb#0.025#SDH_006_PLY_SDH_006_0",
+                "대전 소대헌·호연재 고택_호구단자": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_26.glb#0.05#SDH_005_3_PLY_SDH_005_3:lambert2_0",
+                "대전 소대헌·호연재 고택_호연재유고": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_27.glb#0.05#book_cover_01_SRC_003_1_M_0#RootNode.001",
+                "대전 소대헌·호연재 고택_호적궤": "https://realistic.hscdn.com/contents/3d_asset/tangible/sodaeheon/sodeaheon_28.glb#0.25#SDH_005_02_body_m_final_texture_0#RootNode.001",
                 
             }
 
@@ -180,13 +180,13 @@ const VRdata =
         "수원화성": {
             "Model3D":
             {
-                "장안문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/625_2.glb",
-                "수원화성_거중기": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_1.glb",
-                "수원화성_녹로": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_2.glb",
-                "수원화성_북암문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_3.glb",
-                "수원화성_서북공심돈": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_4.glb",
-                "수원화성_수원 방화수류정": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_5.glb",
-                "수원화성_수원 팔달문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_06.glb"
+                "장안문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/625_2.glb#0.15#roof_over#JangAn_gate",
+                "수원화성_거중기": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_1.glb#0.5#6",
+                "수원화성_녹로": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_2.glb#0.3#3",
+                "수원화성_북암문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_3.glb#0.015#2",
+                "수원화성_서북공심돈": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_4.glb#0.15#3",
+                "수원화성_수원 방화수류정": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_5.glb#0.01#6",
+                "수원화성_수원 팔달문": "https://realistic.hscdn.com/contents/3d_asset/tangible/suwonhwaseong/suwonhwaseong_06.glb#0.15"
             },
             "video":
             {
@@ -201,33 +201,34 @@ const VRdata =
             },
             "Model3D":
             {
-                "거북등 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_01/goindol_1.glb",
-                "고창 고인돌 2308 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_02/goindol_2.glb",
-                "고창 고인돌 2406 마당고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_03/goindol_3.glb",
-                "고창 고인돌 2408 뒤지고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_04/goindol_4.glb",
-                "고창 고인돌 2419 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_05/goindol_5.glb",
-                "고창 고인돌 2512 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_06/goindol_6.glb",
-                "고창 고인돌 2513 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_07/goindol_7.glb",
-                "괴바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_08/goindol_8.glb",
-                "군장 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_09/goindol_9.glb",
-                "대신리발굴전시관 석곽":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_10/goindol_10.glb",
-                "도산리 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_11/goindol_11.glb",
-                "두꺼비고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_12/goindol_12.glb",
-                "부근리 지석묘":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_13/goindol_13.glb",
-                "핑매바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_14/goindol_14.glb",
-                "화순 대신리 고인돌 춘59":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_15/goindol_15.glb",
-                "화순 대신리 고인돌 춘63 감태바위 고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_16/goindol_16.glb",
-                "화순 대신리 마당바위 고인돌 춘100":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_17/goindol_17.glb",
-                "화순 효산리 고인돌 도108 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_18/goindol_18.glb",
-                "화순 효산리 고인돌 도132 관청바위고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_19/goindol_19.glb",
-                "화순 효산리 고인돌 도135 관청바위고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_20/goindol_20.glb",
-                "화순 효산리 고인돌 도G-1 달바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_21/goindol_21.glb" 
-            },
-            "VR":
-            {
-                "준비중입니다?": "##"
-            },
+                "거북등 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_01/goindol_1.glb#0.15#GoChang_2_2428_1__GoChang_2_2428_1%_0.001",
+                "고창 고인돌 2308 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_02/goindol_2.glb#0.4",
+                "고창 고인돌 2406 마당고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_03/goindol_3.glb#0.3",
+                "고창 고인돌 2408 뒤지고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_04/goindol_4.glb#0.3",
+                "고창 고인돌 2419 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_05/goindol_5.glb#0.5",
+                "고창 고인돌 2512 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_06/goindol_6.glb#0.5",
+                "고창 고인돌 2513 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_07/goindol_7.glb#0.5",
+                "괴바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_08/goindol_8.glb#0.08#HwaSun_HyoSan_Do_C_2_1__HwaSun_HyoSan_Do_C-2_1%_0",
+                "군장 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_09/goindol_9.glb#0.5#Default_GoChang_1_2509_1%_0",
+                "대신리발굴전시관 석곽":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_10/goindol_10.glb#0.1#HwaSun_DaeSin_JeonSi_1__HwaSun_DaeSin_JeonSi_1%_0",
+                "도산리 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_11/goindol_11.glb#0.08#GoChang_6_2443_1__GoChang_6_2443_1%_0",
+                "두꺼비고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_12/goindol_12.glb#0.08#GoChang_2_2433_1__GoChang_2_2433_1%_0.001",
+                "부근리 지석묘":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_13/goindol_13.glb#0.06#GangHwa_BuGeunRiJiSeokMyo_137_1__GangHwa_BuGeunRiJiSeokMyo_137_",
+                "핑매바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_14/goindol_14.glb#0.05#HwaSun_DaeSin_Chun130_1__HwaSun_DaeSin_Chun130_1%_0.002",
+                "화순 대신리 고인돌 춘59":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_15/goindol_15.glb#0.5",
+                "화순 대신리 고인돌 춘63 감태바위 고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_16/goindol_16.glb#1.0",
+                "화순 대신리 마당바위 고인돌 춘100":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_17/goindol_17.glb#0.15",
+                "화순 효산리 고인돌 도108 무명":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_18/goindol_18.glb#0.8",
+                "화순 효산리 고인돌 도132 관청바위고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_19/goindol_19.glb#0.4",
+                "화순 효산리 고인돌 도135 관청바위고인돌군":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_20/goindol_20.glb#0.3",
+                "화순 효산리 고인돌 도G-1 달바위 고인돌":"https://realistic.hscdn.com/contents/3d_asset/tangible/goindol_21/goindol_21.glb#0.4" 
+            }
+ 
 
+        },
+        "고인돌고창": {
+        },
+        "고인돌화순": {
         },
         "통도사": {
             "video":
@@ -236,16 +237,13 @@ const VRdata =
             },
             "Model3D":
             {
-                "양산 통도사 금강계단": "https://realistic.hscdn.com/contents/3d_asset/tangible/tongdosa/tongdosa_1.glb",
-                "양산 통도사 대웅전": "https://realistic.hscdn.com/contents/3d_asset/tangible/tongdosa/tongdosa_2.glb",
+                "양산 통도사 금강계단": "https://realistic.hscdn.com/contents/3d_asset/tangible/tongdosa/tongdosa_1.glb#0.03",
+                "양산 통도사 대웅전": "https://realistic.hscdn.com/contents/3d_asset/tangible/tongdosa/tongdosa_2.glb#0.08#Bondang01_Bondang01_0",
             }
 
         },
         "공룡화석지": {
-            "AR":
-            {
-                "준비중입니다?": "##"
-            },
+
             "VRvideo":
             {
                 "고성 덕명리 공룡과 새발자국": "https://realistic.hscdn.com/contents/37b9b964-4907-44e5-9abd-c06feb4f4aa6.mp4",
@@ -254,12 +252,13 @@ const VRdata =
             }
 
         },
-        "한양도성 궁중회화": {
+        "한양도성": {
             "video":
             {
                 "한양도성 반차도": "https://realistic.hscdn.com/contents/3883022e-252a-454e-a3b2-75c588460f8a.mp4#long",
                 "한양도성 십장생도": "https://realistic.hscdn.com/contents/9b8af797-4478-44c6-9722-52d950b4e12c.mp4#long",
-                "한양도성 진찬": "https://realistic.hscdn.com/contents/b98894d6-ce3f-47ef-949d-cec55ffe6798.mp4#long"
+                "한양도성 진찬": "https://realistic.hscdn.com/contents/b98894d6-ce3f-47ef-949d-cec55ffe6798.mp4#long",
+                
             }
 
         }
